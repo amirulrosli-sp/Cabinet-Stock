@@ -572,7 +572,7 @@
       // Check admin status
       if (!window.auth || !window.auth.isAdmin || !window.auth.isAdmin()) {
         alert('Access denied. Admins only.');
-        window.location.href = 'login.html';
+        window.location.href = 'index.html';
         return;
       }
 
@@ -806,7 +806,7 @@
     // Logout function
     function logout() {
       window.auth.logout();
-      window.location.href = 'login.html';
+      window.location.href = 'index.html';
     }
 
     // Generate purchase orders for low stock items
